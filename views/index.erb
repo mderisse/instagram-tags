@@ -1,0 +1,16 @@
+
+<html>
+  <body>
+    <h1>Enter a Tag, Friend</h1>
+    <% if url.length > 0 %>
+      <h2>View the <%= tag %> tag:</h2>
+      <% url.each do |image| %>
+        <img src='<%= image %>'>
+      <% end %>
+    <% end %>
+    <form action = "/click">
+      <input type = "text" name = "name" >
+        <button>Click Me</button>
+    </form>
+  </body>
+</html>
